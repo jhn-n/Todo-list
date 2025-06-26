@@ -1,3 +1,44 @@
 body {
     background-color: aquamarine;
 }
+
+header {
+    display: grid;
+    place-content: center;
+    border-bottom: black solid 2px;
+}
+
+.container {
+    display: flex;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    border: black solid 1px;
+}
+
+.name {
+    text-align: center;
+}
+
+.item {
+border: dotted black 1px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0.5rem 3rem;
+}
+.title {
+    font-weight: bold;
+}
+
+.description {
+    font-style: italic;
+}
+button {
+    margin: 5px ;
+    align-self: center;
+}
