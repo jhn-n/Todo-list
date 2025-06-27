@@ -31,18 +31,30 @@
                 <label for="formDueDate">Due Date</label>
                 <input type="date" id="formDueDate" required />
             </div>
-            <div>
-                <label for="formPriority">Priority</label>
-                <input type="text" id="formPriority" />
+            Priority?
+            <div class="radioButtons">
+                <span>
+                    <input type="radio" id="formPriorityHigh" name="priorityRadio" />
+                    <label for="formPriorityHigh">High</label>
+                </span>
+                <span>
+                    <input type="radio" id="formPriorityMedium" name="priorityRadio" checked />
+                    <label for="formPriorityMedium">Medium</label>
+                </span>
+                <span>
+                    <input type="radio" id="formPriorityLow" name="priorityRadio" /> 
+                    <label for="formPriorityLow">Low</label>
+                </span>
             </div>
+
             Task Completed?
             <div class="radioButtons">
                 <span>
-                    <input type="radio" id="formCompleted" value="Y" />
+                    <input type="radio" id="formCompleted" name="completedRadio" />
                     <label for="formCompleted">Yes</label>
                 </span>
                 <span>
-                    <input type="radio" id="formUncompleted" value="N" checked />
+                    <input type="radio" id="formUncompleted" name="completedRadio" checked />
                     <label for="formUncompleted">No</label>
                 </span>
             </div>

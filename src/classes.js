@@ -1,10 +1,8 @@
-import { format } from "date-fns";
-
-export class Item {
+class Item {
 	constructor(title, description, dueDate, priority, completed, projectId) {
 		this.title = title;
 		this.description = description;
-		this.dueDate = new Date(dueDate);
+		this.dueDate = dueDate;
 		this.priority = priority;
 		this.completed = completed;
 		this.projectId = projectId;
@@ -14,20 +12,19 @@ export class Item {
 	edit(title, description, dueDate, priority, completed) {
 		this.title = title;
 		this.description = description;
-		this.dueDate = new Date(dueDate);
+		this.dueDate = dueDate;
 		this.priority = priority;
 		this.completed = completed;
 	}
 }
 
-export class Project {
+class Project {
 	constructor(projectName) {
 		this.name = projectName;
 		this.items = [];
 		this.id = crypto.randomUUID();
 	}
 
-	// make private?
 	findItemIndex(itemId) {
 		const itemIndex = this.items.findIndex((e) => e.id === itemId);
 		if (itemIndex < 0) {
@@ -74,7 +71,6 @@ export class Workspace {
 	constructor(workplaceName) {
 		this.name = workplaceName;
 		this.projects = [];
-		this.addProject("Default");
 	}
 
 	findProjectIndex(projectId) {
