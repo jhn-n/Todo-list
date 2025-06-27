@@ -7,9 +7,9 @@ const myUser = new Workspace("John");
 startUp(myUser);
 
 function startUp(user) {
-	if (!loadProjects(user)) {
-		createExamples(user);
-	}
-	setUpButtons(user);
-	display(user);
+    if (!loadProjects(user)) {
+        createExamples(user);
+    }
+    setUpButtons(user);
+    display(user);
 }
