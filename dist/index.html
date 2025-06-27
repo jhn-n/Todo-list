@@ -1,11 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do list</title>
-<script defer src="main.js"></script></head>
-<body>
-    
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>To Do list</title><script defer="defer" src="main.js"></script></head><body><header><h1>To Do List</h1><button type="button" id="addProjectButton">New Project</button></header><div class="container"></div><dialog id="itemDialog"><form action="https://httpbin.org/post" method="post" id="itemForm"><div><label for="formTitle">Title</label> <input id="formTitle" required/></div><div><label for="formDescription">Description</label> <input id="formDescription" required/></div><div><label for="formDueDate">Due Date</label> <input type="date" id="formDueDate" required/></div>Priority?<div class="radioButtons"><span><input type="radio" id="formPriorityHigh" name="priorityRadio"/> <label for="formPriorityHigh">High</label> </span><span><input type="radio" id="formPriorityMedium" name="priorityRadio" checked="checked"/> <label for="formPriorityMedium">Medium</label> </span><span><input type="radio" id="formPriorityLow" name="priorityRadio"/> <label for="formPriorityLow">Low</label></span></div>Task Completed?<div class="radioButtons"><span><input type="radio" id="formCompleted" name="completedRadio"/> <label for="formCompleted">Yes</label> </span><span><input type="radio" id="formUncompleted" name="completedRadio" checked="checked"/> <label for="formUncompleted">No</label></span></div><div class="buttons"><button type="submit" id="submitButton">Submit</button> <button type="button" id="cancelButton">Cancel</button></div></form></dialog><dialog id="projectDialog"><form action="https://httpbin.org/post" method="post" id="projectForm"><div><label for="formName">Title</label> <input id="formName" required/></div><div class="buttons"><button type="submit" id="projectSubmitButton">Submit</button> <button type="button" id="projectCancelButton">Cancel</button></div></form></dialog></body></html>
